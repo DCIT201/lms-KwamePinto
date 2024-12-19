@@ -9,21 +9,21 @@ public class App {
         Library library = new Library();
 
         // Add Books
-        library.addBook(new Book("1984", "George Orwell"));
-        library.addBook(new Book("To Kill a Mockingbird", "Harper Lee"));
-        library.addBook(new Book("The Great Gatsby", "F. Scott Fitzgerald"));
+        library.addBook(new Book("book1", "Author1"));
+        library.addBook(new Book("book2", "Author2"));
+        library.addBook(new Book("The elder scrolls", "Victor Pinto"));
 
         // Create Patrons
-        Patron patron1 = new Patron("Alice", 1);
-        Patron patron2 = new Patron("Bob", 2);
+        Patron patron1 = new Patron("Alex", 1);
+        Patron patron2 = new Patron("Emmanuel", 2);
 
         // List all books
         System.out.println("Books in the Library:");
         library.listBooks();
 
         // Patron borrows a book
-        System.out.println("\nAlice borrows '1984':");
-        if (library.borrowBook("1984", patron1)) {
+        System.out.println("\nAlex borrows 'book1':");
+        if (library.borrowBook("book1", patron1)) {
             System.out.println("Borrowed successfully!");
         } else {
             System.out.println("Book is not available.");
@@ -33,9 +33,9 @@ public class App {
         System.out.println("\nBooks in the Library after borrowing:");
         library.listBooks();
 
-        // Alice returns the book
-        System.out.println("\nAlice returns '1984':");
-        if (library.returnBook("1984", patron1)) {
+        // Alex returning  book1
+        System.out.println("\nAlex returns 'book1':");
+        if (library.returnBook("book1", patron1)) {
             System.out.println("Returned successfully!");
         } else {
             System.out.println("Return failed.");
