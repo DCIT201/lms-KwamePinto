@@ -30,7 +30,7 @@ public class App {
         }
 
         // List all books after borrowing
-        System.out.println("\nBooks in the Library after borrowing:");
+        System.out.println("Books in the Library after borrowing:");
         library.listBooks();
 
         // Alex returning  book1
@@ -42,7 +42,7 @@ public class App {
         }
 
         // List all books after returning
-        System.out.println("\nBooks in the Library after returning:");
+        System.out.println("Books in the Library after returning:");
         library.listBooks();
     }
 }
